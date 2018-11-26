@@ -9,3 +9,4 @@
 node_modules/
 isdc_geoaccessibility.egg-info/
 dist/
+package-lock.json
