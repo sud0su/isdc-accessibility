@@ -1,3 +1,6 @@
+FILE=VERSION
+VERSION=`cat $(FILE)`
+
 .PHONY: build immap package release
 
 build:
@@ -7,4 +10,7 @@ immap: build
 	npm run immap:deploy
 
 package: immap
-	python setup.py sdist
+	python setup.py sdist bdist_wheel
+
+release: package
+	twine upload dist/isdc-geoaccessiblity-$(VERSION).tar.gz

@@ -1,1 +1,1 @@
-# iMMAP Accessibility Module
+# iMMAP GeoAccessibility Module
